@@ -1,4 +1,4 @@
-package com.openclassrooms.hr_webapp.model;
+package com.openclassrooms.hrwebapp.model;
 
 import lombok.Data;
 
@@ -10,6 +10,6 @@ public class Employee {
     private String lastName;
     private String mail;
     private String password;
-    
+
 
 }

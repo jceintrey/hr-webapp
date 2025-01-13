@@ -1,4 +1,4 @@
-package com.openclassrooms.hr_webapp.repository;
+package com.openclassrooms.hrwebapp.repository;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.ParameterizedTypeReference;
@@ -7,8 +7,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 
-import com.openclassrooms.hr_webapp.HrProperties;
-import com.openclassrooms.hr_webapp.model.Employee;
+import com.openclassrooms.hrwebapp.HrProperties;
+import com.openclassrooms.hrwebapp.model.Employee;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -27,6 +27,8 @@ public class EmployeeProxy {
         String baseApiUrl = props.getApiUrl();
         String getEmployeesUrl = baseApiUrl + "/employees";
 
+        
+        log.debug("Constructed URL: {}", getEmployeesUrl);
         RestTemplate restTemplate = new RestTemplate();
         ResponseEntity<Iterable<Employee>> response = restTemplate.exchange(
                 getEmployeesUrl,

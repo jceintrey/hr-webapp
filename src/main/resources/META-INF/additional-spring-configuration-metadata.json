@@ -1,5 +1,8 @@
-{"properties": [{
-  "name": "com.openclassrooms.hr_webapp.apiUrl",
-  "type": "java.lang.String",
-  "description": "The base URL for the HR web application API'"
-}]}
+{"properties": [
+ 
+  {
+    "name": "com.openclassrooms.hrwebapp.apiUrl",
+    "type": "java.lang.String",
+    "description": "A description for 'com.openclassrooms.hrwebapp.apiUrl'"
+  }
+]}
