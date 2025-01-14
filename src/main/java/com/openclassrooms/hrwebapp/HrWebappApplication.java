@@ -7,7 +7,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import com.openclassrooms.hrwebapp.repository.EmployeeProxy;
 
-import lombok.Data;
 
 
 @SpringBootApplication
